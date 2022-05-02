@@ -41,11 +41,11 @@ I would like to break the requirement into three modules.
       To handle the images
 ## 6. H2database         
       To store the meta data of images and user information
-## 3. Maven
+## 7. Maven
 	  To manage the Jar files.	  
-## 4. Docker		      
+## 8. Docker		      
       To run the application 
-## 5. JUnit
+## 9. JUnit
       To test the code and generate test report	
 
 # Develop the application
