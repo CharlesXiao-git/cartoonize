@@ -28,21 +28,25 @@
     </parent>
 
     <dependencies>
+        <!--need for java 11 -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
             <version>2.3.0</version>
         </dependency>
+        <!--need for java 11 -->
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
             <version>2.3.0</version>
         </dependency>
+        <!--need for java 11 -->
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-core</artifactId>
             <version>2.3.0</version>
         </dependency>
+        <!--need for java 11 -->
         <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
@@ -54,6 +58,7 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- jwt lib-->
         <dependency>
             <groupId>com.auth0</groupId>
             <artifactId>java-jwt</artifactId>
@@ -66,12 +71,13 @@
             <version>20190722</version>
         </dependency>
 
+        <!-- swagger lib  -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
         </dependency>
-
+        <!-- swagger lib  -->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
@@ -82,19 +88,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
+        <!-- lombok lib  -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
         </dependency>
-
+        <!-- h2 lib  -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-
+        <!-- thumbnailator lib  for image -->
         <dependency>
             <groupId>net.coobird</groupId>
             <artifactId>thumbnailator</artifactId>
@@ -108,6 +114,5 @@
         </dependency>
 
     </dependencies>
-
 
 </project>

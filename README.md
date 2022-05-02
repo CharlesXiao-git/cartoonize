@@ -164,12 +164,12 @@ I would like to break the requirement into three modules.
 3. Using JWT to generate the token and verify the token
 4. Handle exception in controller layer, and other layers throws all the exception out.
 5. Using try with resource when write file
-6. Using lombok on model layer
+6. Using lombok in model layer
 7. Using Functional Programming when process image 
 
 # Extension in the future
 
-1. Replace imageUtil with Micro service 
+1. Replace imageUtil with Micro Service 
 
 # Get Test Result
 
