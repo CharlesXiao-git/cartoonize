@@ -1,6 +1,7 @@
 # Cartoonize Photo Webservice / API
 
-#################### Requirements 
+# Requirements
+ 
   Candidates should create a simple Webservice / REST API that allows a frontend client to upload images to a library and view / download cartooned versions of images in their library.
   
   Test Requirements
@@ -19,7 +20,8 @@
   7. How would you return extra metadata with an image?
   8. How would you handle expiring old images?
 
-#################### Solution
+#  Solution
+
 I would like to break the requirement into three modules. 
  1.User module will handle the security and account information.
  2.Image module will provide image upload and download feature.
@@ -37,7 +39,7 @@ I would like to break the requirement into three modules.
 4. Docker		      To run the application 
 5. JUnit			  To test the code and generate test report	
 
-#################### Develop the application
+# Develop the application
 
 #  First stage to complete user module
 
@@ -71,7 +73,7 @@ I would like to break the requirement into three modules.
 1. set a global token parameter in the head of the request
 2. The swagger url need to be excluded by auth
 
-#################### Development Planning
+# Development Planning
 
 1. Using 4 hours on first stage
 2. Using 2 hours on second stage
@@ -79,24 +81,24 @@ I would like to break the requirement into three modules.
 4. Using 4 hours on fourth stage
 5. Using 2 hours on fifth stage
 
-#################### Prerequisites:
+# Prerequisites:
 
 - Install Maven and JDK11
 
-#################### Run locally in JDk11
+# Run locally in JDk11
 
 1.go to CartoonizePhoto folder
 2.run ' mvn clean package spring-boot:run '
 3.open http://localhost:8080/swagger-ui.html
 
-#################### Run locally in Docker
+# Run locally in Docker
 
 1. go to CartoonizePhoto folder
 2. docker build -t cartoonize .
 3. docker run -d -p 8080:8080 --name springboot_web cartoonize
 4. open http://localhost:8080/swagger-ui.html
 
-#################### Test the application
+# Test the application
 
 1.Using http://localhost:8080/swagger-ui.html to test the application
 2.Click User API Interfaces.
@@ -146,7 +148,7 @@ I would like to break the requirement into three modules.
       b. Input token from step 3
       c. Input image Name from 4,2 'person.jpeg'
       d. You can download the graying image 'borderImage_person.jpeg'    
-#################### Technical decision when develop the application
+# Technical decision when develop the application
 
 1. Using threadPool to improve performance
 2. Using scheduled job to process the expired image
@@ -156,11 +158,11 @@ I would like to break the requirement into three modules.
 6. Using lombok on model layer
 7. Using Functional Programming when process image 
 
-#################### Extension in the future
+# Extension in the future
 
 1. Replace imageUtil with Micro service 
 
-#################### Get Test Result
+#Get Test Result
 
 From testResult folder to get screenshot of the test result.
 
