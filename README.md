@@ -81,15 +81,15 @@ I would like to break the requirement into three modules.
 4. Using 4 hours on fourth stage
 5. Using 2 hours on fifth stage
 
-# Prerequisites:
+# Before run the application
 
 - Install Maven and JDK11
 
-# Run locally in JDk11
+# Run locally in JDk11 Env
 
-1.go to CartoonizePhoto folder
-2.run ' mvn clean package spring-boot:run '
-3.open http://localhost:8080/swagger-ui.html
+1. go to CartoonizePhoto folder
+2. run ' mvn clean package spring-boot:run '
+3. open http://localhost:8080/swagger-ui.html
 
 # Run locally in Docker
 
@@ -100,34 +100,34 @@ I would like to break the requirement into three modules.
 
 # Test the application
 
-1.Using http://localhost:8080/swagger-ui.html to test the application
-2.Click User API Interfaces.
-   2.1 registry an account 'tom'
+### 1.Using http://localhost:8080/swagger-ui.html to test the application
+### 2.Click User API Interfaces.
+####   2.1 registry an account 'tom'
        a. Click Post : /user/registry. 
        b. Click 'try it out' button
        c. Input password: 123 and username: tom
        d. Click Execute, and get 'tom created'
-   2.2 login and get token
+####   2.2 login and get token
        a. Click Get : /user/getToken
        b. Click 'try it out' button
        c. Input password: 123 and username: tom
        d. click Execute, and get token :'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0b20iLCJpc3MiOiJhdXRoMCIsImV4cCI6MTY1MTQyNTM1N30.eAu-ecH10zR-wiSfH3aiSNPPRAxgiExB9Sf8JmJSR0s'
-   2.3 get all users
+####   2.3 get all users
        a. Click Get : /user/listUser
        b. Click 'try it out' button
        c. Input token from 3,2
        d. Click Execute, and get result: {"users":[{"password":"123","userName":"tom"}]}
-3.Click Image API Interfaces.
-  3.1 upload an image 'person.jpeg'
+### 3.Click Image API Interfaces.
+####  3.1 upload an image 'person.jpeg'
       a. Click Post : /image/upload
       b. Input token from step 3
       c. Select an image from your computer 'person.jpeg' 
       d. Click Execute, and get result: 'Upload file : person.jpeg'
-  3.2 list all images uploaded by user
+####  3.2 list all images uploaded by user
       a. Click Get :  /image/listImages
       b. Input token from step 3 
       c. Click Execute, and get result: {"images":[{"imageName":"person.jpeg","createdBy":"tom     ","imagePath":"tom/person.jpeg"}]} 
-  3.3 download image by imagename
+#### 3.3 download image by imagename
       a. Click Get :  /image/downloadImages
       b. Input token from step 3
       c. Input image Name from 4,2 'person.jpeg'
@@ -137,13 +137,13 @@ I would like to break the requirement into three modules.
        content-length: 134024 
        content-type: image/jpeg;charset=utf-8 
        date: Sun, 01 May 2022 07:58:09 GMT
- 4.Click Cartoonize API Interfaces.
-   4.1 graying image by imagename
+### 4.Click Cartoonize API Interfaces.
+####   4.1 graying image by imagename
       a. Click Get :  /cartoonize/grayingImage
       b. Input token from step 3
       c. Input image Name from 4,2 'person.jpeg'
       d. You can download the graying image 'grayImage_person.jpeg'
-   4.2 border image by imagename
+####   4.2 border image by imagename
       a. Click Get :  /cartoonize/borderImage
       b. Input token from step 3
       c. Input image Name from 4,2 'person.jpeg'
