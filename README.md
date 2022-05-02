@@ -23,9 +23,9 @@
 #  Solution
 
 I would like to break the requirement into three modules. 
- 1.User module will handle the security and account information.
- 2.Image module will provide image upload and download feature.
- 3.Cartoonize module will let use to cartoonize their images. 
+ 1. User module will handle the security and account information.
+ 2. Image module will provide image upload and download feature.
+ 3. Cartoonize module will let use to cartoonize their images. 
 
 # Skills used in this exercise
 
@@ -91,10 +91,10 @@ I would like to break the requirement into three modules.
 2. run ' mvn clean package spring-boot:run '
 3. open http://localhost:8080/swagger-ui.html
 
-# Run locally in Docker
+# Run locally in Docker Env
 
 1. go to CartoonizePhoto folder
-2. docker build -t cartoonize .
+2. run 'docker build -t cartoonize' .
 3. docker run -d -p 8080:8080 --name springboot_web cartoonize
 4. open http://localhost:8080/swagger-ui.html
 
