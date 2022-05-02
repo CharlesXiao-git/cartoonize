@@ -41,14 +41,14 @@ I would like to break the requirement into three modules.
 
 # Develop the application
 
-#  First stage to complete user module
+##  First stage to complete user module
 
 1. Input username and password to registry a account
 2. The registry user use username and password to login to the application, and get a token
 3. The registry user use the token to access other API interfaces
 4. The registry user use token to list all users in the application
 
-#  Second stage to complete image module
+##  Second stage to complete image module
 
 1. The registry user use token to upload image to file store
 2. The registry user use token to list all images,that uploaded by himself 
@@ -57,18 +57,18 @@ I would like to break the requirement into three modules.
 5. All registry user has a directory belong to himself
 6. If an image has stored for more than 3 months, the image will be expired 
 
-#  Third stage to complete cartoonize module
+##  Third stage to complete cartoonize module
 
 1. The registry user use token and filename to gray image and store in file store
 2. The registry user use token and filename to border image and store in file store
 
-#  Fourth stage to improve performance to support hundreds of uploads per second
+##  Fourth stage to improve performance to support hundreds of uploads per second
 
 1. Use threadpool to improve the performance
 2. @Async is used in image service. So it is very fast to response to the user, and the thread 
    will async to upload file to file store and store image meta data into db.
    
-#  Fifth stage to use Swagger-ui to demo the application
+##  Fifth stage to use Swagger-ui to demo the application
 
 1. set a global token parameter in the head of the request
 2. The swagger url need to be excluded by auth
@@ -162,7 +162,7 @@ I would like to break the requirement into three modules.
 
 1. Replace imageUtil with Micro service 
 
-#Get Test Result
+# Get Test Result
 
 From testResult folder to get screenshot of the test result.
 
