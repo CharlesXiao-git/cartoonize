@@ -40,12 +40,14 @@ I would like to break the requirement into three modules.
 #################### Develop the application
 
 #  First stage to complete user module
+
 1. Input username and password to registry a account
 2. The registry user use username and password to login to the application, and get a token
 3. The registry user use the token to access other API interfaces
 4. The registry user use token to list all users in the application
 
 #  Second stage to complete image module
+
 1. The registry user use token to upload image to file store
 2. The registry user use token to list all images,that uploaded by himself 
 3. The registry user use token and filename(from 2) to download image from file store
@@ -54,19 +56,23 @@ I would like to break the requirement into three modules.
 6. If an image has stored for more than 3 months, the image will be expired 
 
 #  Third stage to complete cartoonize module
+
 1. The registry user use token and filename to gray image and store in file store
 2. The registry user use token and filename to border image and store in file store
 
 #  Fourth stage to improve performance to support hundreds of uploads per second
+
 1. Use threadpool to improve the performance
 2. @Async is used in image service. So it is very fast to response to the user, and the thread 
    will async to upload file to file store and store image meta data into db.
    
 #  Fifth stage to use Swagger-ui to demo the application
+
 1. set a global token parameter in the head of the request
 2. The swagger url need to be excluded by auth
 
 #################### Development Planning
+
 1. Using 4 hours on first stage
 2. Using 2 hours on second stage
 3. Using 4 hours on third stage
@@ -74,20 +80,24 @@ I would like to break the requirement into three modules.
 5. Using 2 hours on fifth stage
 
 #################### Prerequisites:
+
 - Install Maven and JDK11
 
 #################### Run locally in JDk11
+
 1.go to CartoonizePhoto folder
 2.run ' mvn clean package spring-boot:run '
 3.open http://localhost:8080/swagger-ui.html
 
 #################### Run locally in Docker
+
 1. go to CartoonizePhoto folder
 2. docker build -t cartoonize .
 3. docker run -d -p 8080:8080 --name springboot_web cartoonize
 4. open http://localhost:8080/swagger-ui.html
 
 #################### Test the application
+
 1.Using http://localhost:8080/swagger-ui.html to test the application
 2.Click User API Interfaces.
    2.1 registry an account 'tom'
@@ -137,6 +147,7 @@ I would like to break the requirement into three modules.
       c. Input image Name from 4,2 'person.jpeg'
       d. You can download the graying image 'borderImage_person.jpeg'    
 #################### Technical decision when develop the application
+
 1. Using threadPool to improve performance
 2. Using scheduled job to process the expired image
 3. Using JWT to generate the token and verify the token
@@ -146,15 +157,12 @@ I would like to break the requirement into three modules.
 7. Using Functional Programming when process image 
 
 #################### Extension in the future
+
 1. Replace imageUtil with Micro service 
 
 #################### Get Test Result
+
 From testResult folder to get screenshot of the test result.
 
-
-https://github.com/CharlesXiao-git/cartoonize.git 
-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
-
-git remote set-url origin https://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@github.com/CharlesXiao-git/cartoonize.git 
 
 
