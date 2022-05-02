@@ -29,15 +29,24 @@ I would like to break the requirement into three modules.
 
 # Skills used in this exercise
 
-1. Spring Boot.       As Spring boot can quick start a web application.
-2. Spring MVC         To develop the Restful API
-3. Swagger            To test the API and demo the application
-4. OAuth(JWT)         To protect the Restful API
-5. Thumbnailator      To handle the images
-6. H2database         To store the meta data of images and user information
-3. Maven			  To manage the Jar files.
-4. Docker		      To run the application 
-5. JUnit			  To test the code and generate test report	
+## 1. Spring Boot.       
+      As Spring boot can quick start a web application.
+## 2. Spring MVC         
+      To develop the Restful API
+## 3. Swagger            
+      To test the API and demo the application
+## 4. OAuth(JWT)         
+      To protect the Restful API
+## 5. Thumbnailator      
+      To handle the images
+## 6. H2database         
+      To store the meta data of images and user information
+## 3. Maven
+	  To manage the Jar files.	  
+## 4. Docker		      
+      To run the application 
+## 5. JUnit
+      To test the code and generate test report	
 
 # Develop the application
 
